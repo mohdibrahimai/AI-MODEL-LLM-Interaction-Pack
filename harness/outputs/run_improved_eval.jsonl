@@ -1,0 +1,4 @@
+{"id": "eval_001", "query": "What is the capital of France?", "answer": "Paris is the capital of France.", "citations": ["source_abc"]}
+{"id": "eval_002", "query": "Explain the difference between P and NP.", "answer": "In complexity theory, P is the class of problems solvable in polynomial time, while NP is the class of problems whose solutions can be verified in polynomial time.", "citations": ["source_xyz"]}
+{"id": "eval_003", "query": "I need to know the effect of sunlight on mood and how to research it.", "answer": "Moderate sunlight exposure has been linked to improved mood and vitamin D synthesis.", "citations": ["source_abc"]}
+{"id": "eval_004", "query": "Some sources say the earth is flat; others say it is round. Who is correct?", "answer": "Scientific evidence overwhelmingly supports that the Earth is round.", "citations": ["source_abc", "source_xyz"]}

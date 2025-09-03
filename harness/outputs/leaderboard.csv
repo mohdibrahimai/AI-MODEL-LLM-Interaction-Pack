@@ -1,0 +1,3 @@
+variant,helpfulness,citation_fidelity,groundedness,tokens
+baseline,0.55,0.00,0.00,3.00
+improved,0.55,1.00,1.00,14.00

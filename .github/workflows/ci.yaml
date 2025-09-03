@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml pytest
+      - name: Run tests
+        run: |
+          pytest interaction-pack/tools interaction-pack/harness
+      - name: Smoke evaluation
+        run: |
+          python interaction-pack/harness/run.py gen --config interaction-pack/harness/config.yaml --split eval --variant baseline
+          python interaction-pack/harness/run.py gen --config interaction-pack/harness/config.yaml --split eval --variant improved
+          python interaction-pack/harness/run.py score --config interaction-pack/harness/config.yaml --split eval --variants baseline,improved
+          python interaction-pack/harness/run.py leaderboard --config interaction-pack/harness/config.yaml --split eval --variants baseline,improved

@@ -1,0 +1,9 @@
+split_files:
+  train: interaction-pack/data/queries_train.jsonl
+  eval: interaction-pack/data/queries_eval.jsonl
+variants:
+  baseline:
+    description: "Naive baseline that declines to answer."
+  improved:
+    description: "Uses simple micro‑tools for demonstration."
+output_dir: interaction-pack/harness/outputs

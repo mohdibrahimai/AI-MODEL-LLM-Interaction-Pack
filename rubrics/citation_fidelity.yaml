@@ -1,0 +1,25 @@
+name: "Citation Fidelity"
+levels:
+  - id: C0
+    label: "No or irrelevant citations"
+    criteria:
+      - "Provides no citations despite information requiring sourcing"
+      - "Cites sources unrelated to the answer"
+    examples:
+      - "Paris is the capital of France."
+  - id: C1
+    label: "Partially relevant citations"
+    criteria:
+      - "Cites some correct sources but omits others"
+      - "Includes extraneous or unnecessary citations"
+    examples:
+      - "Paris is the capital of France【1†source_abc】, which is a fact known by many."
+  - id: C2
+    label: "Precise and sufficient citations"
+    criteria:
+      - "Cites all necessary sources and only those sources"
+      - "Places citations directly after the statements they support"
+    examples:
+      - "Paris is the capital of France【1†source_abc】."
+thresholds:
+  pass_min: C2

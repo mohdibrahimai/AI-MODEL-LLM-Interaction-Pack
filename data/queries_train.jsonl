@@ -1,0 +1,3 @@
+{"id": "train_001", "query": "What is the capital of France?", "domain": "factual", "expects_citation": true, "gold_sources": ["source_abc"], "notes": "Short factual answer."}
+{"id": "train_002", "query": "Explain the difference between P and NP.", "domain": "academic", "expects_citation": true, "gold_sources": ["source_xyz"], "notes": "Brief high‑level explanation."}
+{"id": "train_003", "query": "When is it appropriate to clarify a user's ambiguous request?", "domain": "meta", "expects_citation": false, "gold_sources": [], "notes": "Demonstrates partial answer + next step flow."}

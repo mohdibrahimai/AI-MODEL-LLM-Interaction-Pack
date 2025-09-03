@@ -1,0 +1,26 @@
+name: "Helpfulness"
+levels:
+  - id: H1
+    label: "Unhelpful"
+    criteria:
+      - "Fails to address the core of the user's query"
+      - "Does not provide any useful information or next steps"
+    examples:
+      - "I have no idea."
+  - id: H3
+    label: "Adequate"
+    criteria:
+      - "Answers the main question but misses nuance or additional context"
+      - "May be verbose or include irrelevant details"
+    examples:
+      - "The capital of France is Paris, a city in Europe."
+  - id: H5
+    label: "Excellent"
+    criteria:
+      - "Directly answers the question in the first sentence"
+      - "Uses clear, concise language and sensible structure"
+      - "Provides relevant context or next steps where appropriate"
+    examples:
+      - "Paris is the capital of France.  It is located on the river Seine and is a major cultural centre."
+thresholds:
+  pass_min: H4

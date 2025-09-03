@@ -1,0 +1,1 @@
+In computational complexity theory, **P** is the class of problems that can be solved in polynomial time, while **NP** is the class of problems whose solutions can be verified in polynomial time.  The famous open question **P vs NP** asks whether every problem whose solution can be quickly verified can also be quickly solved.

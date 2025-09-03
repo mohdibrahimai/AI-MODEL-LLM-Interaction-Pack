@@ -1,0 +1,4 @@
+{"id": "eval_001", "query": "What is the capital of France?", "domain": "factual", "expects_citation": true, "gold_sources": ["source_abc"], "notes": "Short factual answer."}
+{"id": "eval_002", "query": "Explain the difference between P and NP.", "domain": "academic", "expects_citation": true, "gold_sources": ["source_xyz"], "notes": "Brief high‑level explanation."}
+{"id": "eval_003", "query": "I need to know the effect of sunlight on mood and how to research it.", "domain": "partial", "expects_citation": true, "gold_sources": ["source_abc"], "notes": "Demonstrates partial answer + next step flow."}
+{"id": "eval_004", "query": "Some sources say the earth is flat; others say it is round. Who is correct?", "domain": "disagreement", "expects_citation": true, "gold_sources": ["source_abc", "source_xyz"], "notes": "Disagreement flow demonstrating abstention or justification."}
